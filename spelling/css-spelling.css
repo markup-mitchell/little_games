@@ -1,0 +1,46 @@
+p {
+ font-family: 'Quicksand', cursive;
+   font-size: 10em;
+/*    background: red; */
+/*    border: dotted red; */
+   margin: auto;
+   padding: 0% 0% 0% 25%;
+   opacity: .1;
+}
+
+.reveal {
+   color: green;
+   opacity: 1;
+}
+
+.image {
+   
+   width: 40%;
+   height: 20em;
+   background: coral;
+   left: 30%;
+   top: 10%;
+}
+.imageWrapper {
+   margin-top: 5em;
+   display: flex;
+   justify-content: center;
+   
+/*    padding-top: 40%; */
+/*    background: salmon; */
+}
+.wordWrapper {
+/*    margin-top: 5%; */
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+/*    background: pink; */
+}
+.letterBox {
+   width: 8em;
+   height: 12em;
+   margin: 1%;
+   padding: 2%;
+/*    background: aqua; */
+   border-bottom: thick solid black;
+}
