@@ -1,3 +1,4 @@
+
 p {
  font-family: 'Quicksand', cursive;
    font-size: 10em;
@@ -5,12 +6,14 @@ p {
 /*    border: dotted red; */
    margin: auto;
    padding: 0% 0% 0% 25%;
-   opacity: .1;
+}
+
+.hidden {
+  color: transparent; 
 }
 
 .reveal {
    color: green;
-   opacity: 1;
 }
 
 .image {
