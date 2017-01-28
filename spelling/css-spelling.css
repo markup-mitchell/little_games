@@ -1,4 +1,8 @@
+body {background: #F1EDE5;}
 
+img {
+    box-shadow: .7em .7em .7em #777777; 
+}
 p {
  font-family: 'Quicksand', cursive;
    font-size: 10em;
@@ -16,14 +20,7 @@ p {
    color: green;
 }
 
-.image {
-   
-   width: 40%;
-   height: 20em;
-   background: coral;
-   left: 30%;
-   top: 10%;
-}
+
 .imageWrapper {
    margin-top: 5em;
    display: flex;

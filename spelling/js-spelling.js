@@ -6,18 +6,25 @@
 // - [ ] function to accept/reject
 
 function wholeThing(){
-
+  const imgBox = document.querySelector('.imageWrapper');
   var wordWrapper = document.querySelector('.wordWrapper');
 
-  const wordArray = ["keir", "daddy", "mummy", "nancy", "johnny", "grandad", "iris", "noah", "rory"]; 
-
-  var letterArray = randomPick().split("");
+  const wordArray = ["keir", "daddy", "mummy", "nancy", "johnny", "grandad", "mark", "nanny"]; 
+  
+  var randomName = randomPick();
+  var letterArray = randomName.split("");
 
   function randomPick() {
       let choice = Math.floor(Math.random()* wordArray.length);
       console.log(wordArray[choice]);
    return wordArray[choice];
   } // END randomPick
+
+// Add photo
+  let imgName = "images/" + randomName + ".jpg";
+  let DOM_img = document.createElement("img");
+  DOM_img.src = imgName;
+  imgBox.appendChild(DOM_img);
 
 // generate word to guess 
   for (i=0; i<letterArray.length; i++) {
