@@ -1,0 +1,337 @@
+body {background: grey;}
+
+.picWrapper {
+   display: flex;
+   justify-content: space-around;
+}
+
+.quizWrapper {
+   display: flex;
+   justify-content: space-around;
+   margin: 5%; /* of body */
+}
+
+/* START CAT */
+.cat {
+   position: relative; 
+   width: 12em;
+   height: 12em;
+   background-color: crimson;
+   border-radius: 15%;
+/*    z-index: -1; */
+}
+.cat__head {
+   position: absolute;
+   width: 80%;
+   height: 80%;
+   border-radius: 50%;
+   background-color: orange;
+   z-index: 1;
+   top: 10%;
+   left: 10%;
+}
+.cat__ear {
+   position: absolute;
+   background-color: pink;
+   width: 20%;
+   height: 30%;
+   border: thick solid orange;
+   z-index: 1;
+   top: 10%;
+   left: 10%;
+}
+.cat__left--ear {
+   position: absolute;
+   border-radius: 0% 50%;
+}
+.cat__right--ear {
+   border-radius: 50% 0%;
+   left: 65%;
+}
+.cat__eye {
+   position: absolute;
+   top: 40%;
+   width: 25%;
+   height: 15%;
+   background-color: seagreen;
+   }
+.cat__left--eye {
+   position: absolute;
+   left: 15%;
+   border-radius: 0% 50%;
+}
+.cat__right--eye {
+   position: absolute;
+   left: 60%;
+   border-radius: 50% 0%;
+}
+.cat__pupil {
+   width: 20%;
+   height: 90%;
+   border-radius: 50%;
+   background-color: black;
+   position: absolute;
+   left: 40%;
+   top: 5%;
+}
+.cat__nose {
+  width: 15%;
+   height: 8%;
+   background-color: salmon;
+   position: absolute;
+   top: 55%;
+   left: 42%;
+   border-radius: 0% 0% 50% 50%;
+   }
+.cat__muzzle {
+   position: absolute;
+   width: 25%;
+   height: 20%;
+   background: linear-gradient(to bottom, rgba(265,165,0,0), rgba(255,255,255,1));
+   border-radius: 40%;
+   top: 60%;
+   
+}
+.cat__muzzle--right {
+   left: 50%;
+}
+.cat__muzzle--left {
+   
+   left: 25%;
+}
+.cat__muzzle--bottom {
+   top: 70%;
+   left: 38%;
+}
+/* END CAT */
+
+/* START DOG */
+.dog {
+   position: relative;
+   width: 12em;
+   height: 12em;
+   background-color: teal;
+   border-radius: 15%;
+}
+
+.dog__head {
+   position: absolute;
+   width: 65%;
+   height: 80%;
+   border-radius: 50%;
+/*    border: thin solid tan; */
+   background-color: brown;
+   z-index: 1;
+   top: 10%;
+   left: 19%;
+}
+
+.dog__ear {
+   position: absolute;
+   background-color: brown;
+   width: 20%;
+   height: 65%;
+   z-index: 1;
+   top: 20%;
+}
+
+.dog__left--ear {
+   position: absolute;
+   border-radius: 100% 20%;
+   left: 10%;
+}
+.dog__right--ear {
+   border-radius: 20% 100%;
+   left: 72%;
+}
+.dog__eye {
+   position: absolute;
+   top: 30%;
+   width: 20%;
+   height: 20%;
+   background-color: black;
+  
+   }
+.dog__left--eye {
+   position: absolute;
+   left: 25%;
+   border-radius: 50%;
+}
+.dog__right--eye {
+   position: absolute;
+   left: 55%;
+   border-radius: 50%;
+}
+.dog__pupil {
+   width: 20%;
+   height: 20%;
+   border-radius: 60%;
+   background-color: white;
+   position: absolute;
+   left:60%;
+   top: 25%;
+}
+
+.dog__nose {
+  width: 25%;
+   height: 10%;
+   background-color: black;
+   position: absolute;
+   top: 60%;
+   left: 38%;
+   border-radius: 50%;
+   }
+.dog__muzzle {
+   position: absolute;
+   width: 25%;
+   height: 20%;
+   background: linear-gradient(to bottom, rgba(255,165,0,0), rgba(250,180,160,1));
+   border-radius: 40%;
+   top: 65%;
+   
+}
+.dog__muzzle--right {
+   left: 50%;
+}
+.dog__muzzle--left {
+   left: 25%;
+}
+.dog__muzzle--bottom {
+   top: 75%;
+   left: 38%;
+}
+/* END DOG */
+
+/* START dino */
+.dino {
+   position: relative;
+   width: 12em;
+   height: 12em;
+   background-color: orange;
+   border-radius: 15%;
+/*    z-index: -1; */
+}
+.dino__head {
+   position: absolute;
+   width: 60%;
+   height: 90%;
+   border-radius: 50% 50% 0% 0%;
+   background: 
+      linear-gradient(to bottom, rgba(0,100,0,1),rgba(200,200,0,1));
+   z-index: 1;
+   top: 10%;
+   left: 20%;
+}
+.dino__ear {
+   position: absolute;
+   background-color: pink;
+   width: 20%;
+   height: 30%;
+   border: thick solid orange;
+   z-index: 1;
+   top: 10%;
+   left: 10%;
+}
+.dino__left--ear {
+   position: absolute;
+   border-radius: 0% 50%;
+}
+.dino__right--ear {
+   border-radius: 50% 0%;
+   left: 65%;
+}
+.dino__eye {
+   position: absolute;
+   top: 20%;
+   width: 25%;
+   height: 10%;
+   background-color: red;
+   }
+.dino__left--eye {
+   position: absolute;
+   left: 20%;
+   border-radius: 50% 150% 0% 50%;
+}
+.dino__right--eye {
+   position: absolute;
+   left: 55%;
+   border-radius: 150% 50% 50% 0%;
+}
+.dino__pupil {
+   width: 35%;
+   height: 50%;
+   border-radius: 50%;
+   background-color: black;
+   position: absolute;
+   left: 30%;
+   top: 30%;
+}
+.dino__nose {
+  width: 5%;
+   height: 5%;
+   background-color: black;
+   position: absolute;
+   top: 38%;
+   left: 42%;
+   border-radius: 50%;
+   }
+.dino_nostril_2 {
+   position: absolute;
+   left: 53%;
+}
+
+.dino__muzzle {
+   position: absolute;
+   width: 90%;
+   height: 20%;
+   background: linear-gradient(to bottom, rgba(265,165,0,.2), rgba(0,110,0,1));
+   border-radius: 50%;
+}
+.dino__muzzle--bottom {
+   top: 50%;
+   left: 5%;
+   border-top: thick dotted white;
+}
+/* END dino */
+
+/* START EAR */
+.ear {
+   position: relative; 
+   width: 12em;
+   height: 12em;
+   background-color: salmon;
+   border-radius: 15%;
+/*    z-index: -1; */
+}
+.ear__outer {
+   position: absolute;
+   width: 80%;
+   height: 85%;
+   border-radius: 50% 100% 100% 50% / 70% 60% 90% 20%;
+   background-color: beige;
+   z-index: 1;
+   top: 8%;
+   left: 0%;
+}
+
+.ear__inner {
+   position: absolute;
+   width: 75%;
+   height: 80%;
+   border-radius: 50% 100% 100% 50% / 70% 60% 90% 20%;
+   background: linear-gradient(to left, beige, tan);
+   z-index: 1;
+   top: 10%;
+   left: 10%;
+}
+
+.ear__nodule {
+   position: absolute;
+   width: 75%;
+   height: 80%;
+    border-radius: 50% 100% 100% 50% / 70% 60% 90% 20%;
+   background: beige;
+   z-index: 1;
+   top: 20%;
+   left: 0%;
+}
