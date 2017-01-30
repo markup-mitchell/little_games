@@ -14,6 +14,10 @@ function wholeThing(){
   var randomName = randomPick();
   var letterArray = randomName.split("");
 
+    function flashLetter() {
+    boxList[letterIndex].classList.add("hint");
+    }
+
   function randomPick() {
       let choice = Math.floor(Math.random()* wordArray.length);
       console.log(wordArray[choice]);
@@ -62,7 +66,6 @@ window.addEventListener("keydown", function (event){
   currentLetter = letterArray[letterIndex];
   }
 });
-
 
 
 } // END wholeThing

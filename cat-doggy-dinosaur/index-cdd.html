@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" src="style-ccd.css">
-    <link href="style-ccd.css" rel="stylesheet" type="text/css" />
+    <script src="script-cdd.js"></script>
+    <link href="style-cdd.css" rel="stylesheet" type="text/css" />
     <title>Cat? Doggy? Dinosaur?!?</title>
 </head>
-<body>
+<body onload="wholeThing()">
 <div class="picWrapper">  
    
    <div class="cat">
@@ -51,8 +51,6 @@
 
 <!-- START DINOSAUR -->
 <div class="dino">
-<!--      <div class="dino__ear dino__left--ear "></div>
-     <div class="dino__ear dino__right--ear"></div> -->
          <div class="dino__head">
             <div class="dino__eye dino__left--eye">
             <div class="dino__pupil"></div>
@@ -85,5 +83,8 @@
       </div><!--END ear__outer -->
    </div><!--END ear -->
 </div><!-- END quizWrapper -->
+
+<div id="message-box"></div>
+
 </body>
 </html>

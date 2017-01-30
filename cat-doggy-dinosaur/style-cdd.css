@@ -301,6 +301,7 @@ body {background: grey;}
    height: 12em;
    background-color: salmon;
    border-radius: 15%;
+   transition: all .3s;
 /*    z-index: -1; */
 }
 .ear__outer {
@@ -334,4 +335,9 @@ body {background: grey;}
    z-index: 1;
    top: 20%;
    left: 0%;
+}
+
+.playing {
+    transform: scale(1.2);
+    
 }

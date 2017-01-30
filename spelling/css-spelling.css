@@ -20,7 +20,19 @@ p {
    color: green;
 }
 
+.hint {
+    animation-name: flashLetter;
+    animation-duration: 1s;
+}
 
+@keyframes flashLetter {
+    50% {
+        color: black;
+    }
+    100% {
+        color: transparent;
+    }
+}
 .imageWrapper {
    margin-top: 5em;
    display: flex;
