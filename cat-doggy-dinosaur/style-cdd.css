@@ -19,7 +19,9 @@ body {
 
 .scoreboard {
    height: 5%;
-   border: solid black;
+   /* border: solid black; */
+   background: black;
+   opacity: .5;
 }
 
 .app {
@@ -35,12 +37,12 @@ body {
    align-content: center;
    align-items: center;
    height: 45%;
-   border: solid salmon;
+   /* border: solid salmon; */
 }
 
 .icon {
    margin: 2vw;
-   border: medium dotted blue;
+   /* border: medium dotted blue; */
    width: 45vw;
    height: 45vw;
    max-height: 20vh;
@@ -49,7 +51,7 @@ body {
 
 .feedback-window {
    height: 20%;
-   border: solid tomato;
+   /* border: solid tomato; */
    display: flex;
    justify-content: center;
    align-items: center;
@@ -279,24 +281,7 @@ body {
    top: 10%;
    left: 20%;
 }
-.dino__ear {
-   position: absolute;
-   background-color: pink;
-   width: 20%;
-   height: 30%;
-   border: thick solid orange;
-   z-index: 1;
-   top: 10%;
-   left: 10%;
-}
-.dino__left--ear {
-   position: absolute;
-   border-radius: 0% 50%;
-}
-.dino__right--ear {
-   border-radius: 50% 0%;
-   left: 65%;
-}
+
 .dino__eye {
    position: absolute;
    top: 20%;
