@@ -31,7 +31,7 @@ body {
 .icon-window {
    display: flex;
    flex-wrap: wrap;
-   justify-c5ntent: space-around;
+   justify-content: space-around;
    align-content: center;
    align-items: center;
    height: 45%;
