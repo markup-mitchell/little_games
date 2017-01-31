@@ -1,22 +1,78 @@
-body {background: grey;}
+html {
+   box-sizing: border-box;
+/*    border: solid coral; */
+   height: 100%;
+   /* window height??? */
+}
 
-.picWrapper {
+body {
+   height: 100%;
+/*    border:thick solid black; */
+
+}
+* {
+   box-sizing: inherit;
+   margin: 0;
+   padding: 0;
+
+}
+
+.scoreboard {
+   height: 5%;
+   border: solid black;
+}
+
+.app {
+/*    border: thick solid red; */
+   margin: none;
+   height: 100%;
+}
+
+.icon-window {
    display: flex;
    flex-wrap: wrap;
-   justify-content: space-around;
+   justify-c5ntent: space-around;
+   align-content: center;
+   align-items: center;
+   height: 45%;
+   border: solid salmon;
 }
 
-.quizWrapper {
-   display: flex;
-   justify-content: space-around;
-   margin: 5%; /* of body */
+.icon {
+   margin: 2vw;
+   border: medium dotted blue;
+   width: 45vw;
+   height: 45vw;
+   max-height: 20vh;
+   max-width: 20vh;
 }
+
+.feedback-window {
+   height: 20%;
+   border: solid tomato;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.feedback {
+       font-size: 4rem;
+}
+
+.main-button {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 30%;
+   border: solid crimson;
+}
+
 
 /* START CAT */
 .cat {
-   position: relative; 
-   width: 12em;
-   height: 12em;
+   position: relative;
+   width: 100%;
+   height: 100%;
    background-color: crimson;
    border-radius: 15%;
 /*    z-index: -1; */
@@ -91,13 +147,13 @@ body {background: grey;}
    background: linear-gradient(to bottom, rgba(265,165,0,0), rgba(255,255,255,1));
    border-radius: 40%;
    top: 60%;
-   
+
 }
 .cat__muzzle--right {
    left: 50%;
 }
 .cat__muzzle--left {
-   
+
    left: 25%;
 }
 .cat__muzzle--bottom {
@@ -109,8 +165,8 @@ body {background: grey;}
 /* START DOG */
 .dog {
    position: relative;
-   width: 12em;
-   height: 12em;
+   width: 100%;
+   height: 100%;
    background-color: teal;
    border-radius: 15%;
 }
@@ -151,7 +207,7 @@ body {background: grey;}
    width: 20%;
    height: 20%;
    background-color: black;
-  
+
    }
 .dog__left--eye {
    position: absolute;
@@ -189,7 +245,7 @@ body {background: grey;}
    background: linear-gradient(to bottom, rgba(255,165,0,0), rgba(250,180,160,1));
    border-radius: 40%;
    top: 65%;
-   
+
 }
 .dog__muzzle--right {
    left: 50%;
@@ -206,8 +262,8 @@ body {background: grey;}
 /* START dino */
 .dino {
    position: relative;
-   width: 12em;
-   height: 12em;
+   width: 100%;
+   height: 100%;
    background-color: orange;
    border-radius: 15%;
 /*    z-index: -1; */
@@ -217,7 +273,7 @@ body {background: grey;}
    width: 60%;
    height: 90%;
    border-radius: 50% 50% 0% 0%;
-   background: 
+   background:
       linear-gradient(to bottom, rgba(0,100,0,1),rgba(200,200,0,1));
    z-index: 1;
    top: 10%;
@@ -297,7 +353,7 @@ body {background: grey;}
 
 /* START EAR */
 .ear {
-   position: relative; 
+   position: relative;
    width: 12em;
    height: 12em;
    background-color: salmon;
@@ -340,5 +396,5 @@ body {background: grey;}
 
 .playing {
     transform: scale(1.2);
-    
+
 }
