@@ -8,7 +8,7 @@ html {
 body {
    height: 100%;
 /*    border:thick solid black; */
-   background: grey;
+   background: black;
 }
 * {
    box-sizing: inherit;
@@ -59,6 +59,7 @@ body {
 
 .feedback {
        font-size: 4rem;
+       color: white;
 }
 
 .main-button {
@@ -178,7 +179,6 @@ body {
    width: 65%;
    height: 80%;
    border-radius: 50%;
-/*    border: thin solid tan; */
    background-color: brown;
    z-index: 1;
    top: 10%;

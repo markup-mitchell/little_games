@@ -4,10 +4,12 @@ function wholeThing() {
 //                  VARIABLES               //
 //++++++++++++++++++++++++++++++++++++++++++//
 
+// ANIMAL OBJECTS //
+
 const cat =  {
-name: "cat", //this may be unnecessary?!?//
-sound: "meow",
-clips: 5 // number of sound samples available
+  name: "cat", // this may be unnecessary?!? //
+  sound: "meow",
+  clips: 5 // number of sound samples available //
 };
 
 const dog = {
@@ -24,6 +26,23 @@ const dinosaur = {
 
 const beastList = [cat, dog, dinosaur];
 
+// DOM STUFF //
+
+const earBox = document.querySelector(".ear");
+const catBox = document.querySelector(".cat");
+const dogBox = document.querySelector(".dog");
+const dinosaurBox = document.querySelector(".dino");
+const feedbackBox = document.querySelector(".feedback");
+
+
+// EVENT LISTENERS //
+
+earBox.addEventListener("transitionend", removeTransition);
+earBox.addEventListener("click", listenAndGuess);
+catBox.addEventListener("click", getGuess);
+dogBox.addEventListener("click", getGuess);
+dinosaurBox.addEventListener("click", getGuess);
+
 //++++++++++++++++++++++++++++++++++++++++++//
 //                  FUNCTIONS               //
 //++++++++++++++++++++++++++++++++++++++++++//
@@ -37,30 +56,27 @@ function removeTransition(e) {
     earBox.classList.remove("playing");
 }
 
-function listenAndGuess() { // choose a sound and require input to continue //
-   
-    let beast = beastList[pickRandom(beastList.length)-1];
+function listenAndGuess() { // choose a sound and prompt to guess//
+
+    var beast = beastList[pickRandom(beastList.length)-1];
 console.log(beast.name);
     let clipNumber =  beast.clips;
     let currentSound = new Audio ("sounds/" + beast.sound + "-"+ pickRandom(clipNumber) + ".wav");
 console.log(currentSound);
     currentSound.play();
     this.classList.add("playing");
-// let userChoice = catBox.addEventListener("click", function(){return "cat"}); 
-//  console.log(userChoice);
+    // return beast;
+}
+
+function getGuess() {
+  const guess = this.classList;
+  // console.log(beast);
+  // if (guess = beast){};
+  feedbackBox.innerHTML = guess;
+  console.log(guess);
 }
 
 
-const earBox = document.querySelector(".ear");
-const catBox = document.querySelector(".cat");
-const dogBox = document.querySelector(".dog");
-const dinosaurBox = document.querySelector(".dinosaur");
-const messageBox = document.getElementById("message-box");
-earBox.addEventListener("transitionend", removeTransition);
-
-console.log(earBox);
-
-earBox.addEventListener("click", listenAndGuess);
 
 
 } /* END function wholeThing */
