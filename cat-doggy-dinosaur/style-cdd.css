@@ -8,7 +8,7 @@ html {
 body {
    height: 100%;
 /*    border:thick solid black; */
-
+   background: grey;
 }
 * {
    box-sizing: inherit;
