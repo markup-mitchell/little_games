@@ -4,6 +4,11 @@ function wholeThing() {
 //                  VARIABLES               //
 //++++++++++++++++++++++++++++++++++++++++++//
 
+// GLOBAL //
+
+var beast;
+var score;
+
 // ANIMAL OBJECTS //
 
 const cat =  {
@@ -31,17 +36,17 @@ const beastList = [cat, dog, dinosaur];
 const earBox = document.querySelector(".ear");
 const catBox = document.querySelector(".cat");
 const dogBox = document.querySelector(".dog");
-const dinosaurBox = document.querySelector(".dino");
+const dinosaurBox = document.querySelector(".dinosaur");
 const feedbackBox = document.querySelector(".feedback");
 
 
 // EVENT LISTENERS //
 
 earBox.addEventListener("transitionend", removeTransition);
-earBox.addEventListener("click", listenAndGuess);
-catBox.addEventListener("click", getGuess);
-dogBox.addEventListener("click", getGuess);
-dinosaurBox.addEventListener("click", getGuess);
+earBox.addEventListener("click", playSound);
+catBox.addEventListener("click", userGuess);
+dogBox.addEventListener("click", userGuess);
+dinosaurBox.addEventListener("click", userGuess);
 
 //++++++++++++++++++++++++++++++++++++++++++//
 //                  FUNCTIONS               //
@@ -56,25 +61,31 @@ function removeTransition(e) {
     earBox.classList.remove("playing");
 }
 
-function listenAndGuess() { // choose a sound and prompt to guess//
-
-    var beast = beastList[pickRandom(beastList.length)-1];
-console.log(beast.name);
+function playSound() { // choose a sound and prompt to guess//
+    beast = beastList[pickRandom(beastList.length)-1];
     let clipNumber =  beast.clips;
     let currentSound = new Audio ("sounds/" + beast.sound + "-"+ pickRandom(clipNumber) + ".wav");
-console.log(currentSound);
     currentSound.play();
     this.classList.add("playing");
-    // return beast;
+    feedbackBox.innerHTML = "Guess!";
+    console.log(userGuess);
 }
 
-function getGuess() {
-  const guess = this.classList;
-  // console.log(beast);
-  // if (guess = beast){};
-  feedbackBox.innerHTML = guess;
-  console.log(guess);
+function userGuess() {
+  let clickedItem = this.classList; // classList probably needs to be one class only to == beast.name
+  if (clickedItem == beast.name){ // the class the querySelector uses to specify the eventListener must EXACTLY MATCH the beastList name
+    feedbackBox.innerHTML="RIGHT!"
+  }
+  else {
+    feedbackBox.innerHTML="WRONG!"
+  }
+  //   return true;
+  // }
+  // else {
+  //   return false;
+
 }
+
 
 
 
