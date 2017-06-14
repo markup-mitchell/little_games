@@ -1,0 +1,65 @@
+h1 {
+  color: coral;
+}
+* {
+   padding: 0;
+   margin: 0;
+/*    background-color: darkgrey; */
+}
+
+body {
+    background-color: darkgrey;
+}
+
+#container {
+   position: absolute;
+   left: 15%;
+   top: 10%;
+   height: 95vh;
+   width: 95vw;
+}
+
+.butt {
+   color: white;
+   font-size: 150%;
+   height: 55%;
+   width: 10%;
+   background-color: #25D;
+   border: none;
+   mix-blend-mode: luminosity;
+}
+.info {
+   position: absolute;
+   bottom: 0;
+   display: flex;
+   justify-content: space-around;
+   height: 80px;
+   width: 100%;
+/*    align-content: center; */
+   font-family: sans-serif;
+   color: white;
+   background-color: black;
+   opacity: .5;
+/*    border-radius: 5px; */
+   padding: 15px;
+}
+#frame {
+/*    border: grey solid; */
+/*    position: absolute; */
+   display: flex;
+   flex-wrap: wrap;
+   align-content: flex-start;
+   width: 90%;
+   height: 90%;
+/*    background-image: url(""); */
+   background-repeat: no-repeat;
+   background-color: darkgrey;
+   background-size: 80% 80%;
+}
+
+.square {
+/*    margin: 0; */
+   background-color: darkgrey;
+   transition: all 1s ease-in-out;
+   opacity: .5;
+}
