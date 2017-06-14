@@ -8,7 +8,11 @@ let data = {
      'url("https://fsmedia.imgix.net/2c/f5/26/db/9e29/4942/8346/56ab9d4ef426/the-soyuz-tma-19m-rocket-with-expedition-46-soyuz-commander-yuri-malenchenko-of-the-russian-federal.jpeg")',   'url("http://yourshot.nationalgeographic.com/u/ss/fQYSUbVfts-T7pS2VP2wnKyN8wxywmXtY0-FwsgxoQrNvelepBpZYlfdosa_7a4TKiob2NUQHNjOVO4ezl7B/")',
      'url("http://www.cats.org.uk/uploads/images/featurebox_sidebar_kids/grief-and-loss.jpg")',
       'url("http://www.thelisteningblog.com/wp-content/uploads/2010/04/ScallopShell_jpg.jpg")',
-     'url("http://www.devoncrab.com/images/slider_image_crab_700_mob.png")'  
+     'url("http://www.devoncrab.com/images/slider_image_crab_700_mob.png")',
+     'url("http://www.freeiconspng.com/uploads/lion-sleeping-png-8.png")',
+     'url("http://pngimg.com/uploads/fox/fox_PNG23171.png"',  
+     'url("http://t03.deviantart.net/F9w-wMbuqQaYHJhJu8JyiQG-7cQ=/fit-in/700x350/filters:fixed_height(100,100):origin()/pre03/4338/th/pre/f/2012/293/6/a/squirrel_png_by_lg_design-d5ig49y.png")',
+     'url("http://pngimg.com/uploads/hedgehog/hedgehog_PNG13.png")'
    ],
    bgColor: [
    '#D0D102',
