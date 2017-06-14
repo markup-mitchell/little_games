@@ -62,7 +62,7 @@ let controller = {
       data.frameWidth = rect.width;
    },
    makeSquare: function(size) {
-      return `<div class="square" onclick="view.show(event)" style="width:${size}vw; height:${size}vw;cursor:pointer;background-color:red;"></div>`
+      return `<div class="square" onclick="view.show(event)" style="width:${size}vw; height:${size}vw;cursor:pointer;background-color:${data.mainCol};"></div>`
       }, 
  
 }
