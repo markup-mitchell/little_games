@@ -1,6 +1,6 @@
 // todo
 // - [X] array of names
-// - [ ]associate name with image
+// - [X]associate name with image
 // - [X] display empty letterboxes (style invisible letters)
 // - [ ] color border for letter next expected
 // - [ ] function to accept/reject
