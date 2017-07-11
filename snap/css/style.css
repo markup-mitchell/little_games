@@ -1,0 +1,58 @@
+body {
+   background: #A34;
+}
+
+:root {
+   --left: 45%;
+   --top: 30%;
+}
+
+.flex-container {
+/*    display: flex; */
+/*    justify-content: center; */
+   margin-top:15%;
+   width: 100vw;
+   height: auto;
+/*    background-color: pink; */
+}
+
+h1 {
+   transform: rotate(-40deg);
+}
+
+.card {
+   position: absolute;
+   top: var(--top);
+   left: var(--left);
+   width: 200px;
+   height: 330px;
+   border: solid white thick;
+   border-radius: 20px;
+   background-color: #466; /*#FC0;*/
+   box-shadow: 2px 3px 15px #333;
+   font-size: 150px;
+   top: 25%;
+}
+
+img {
+   width: 200px;
+   height:  auto;
+   margin-top: 30%;
+}
+
+#playCard {
+   min-width: 150px;
+   width: 120px;
+   min-height: 50px;
+   height: 30%;
+   background: #888;
+   border: none;
+   border-radius: 50px;
+   color: white;
+   font-size: 1.5em;
+}
+
+#playCard:active {
+   background: none;
+   transition: background .2s;
+}  
