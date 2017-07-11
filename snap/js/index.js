@@ -34,7 +34,7 @@ let view = {
    view.box.removeChild(view.box.lastElementChild); 
   },
   seeThrough: function() {
-    view.box.lastChild.style.opacity = '.5';
+    view.box.lastChild.style.opacity = '0';
   }
 }
 
